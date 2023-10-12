@@ -24,7 +24,7 @@ char get_u64flag(long long int flags, char i_flag) {
 // more than 64 flags are available using an array of 32-bit values
 // the maximum amount of flags is 4_294_967_295
 int* init_arrflag(int n_flags) {
-	int s = (n_flags + 15) >> 5; // arr size, max is 268_435_455 (or 134217727?)
+	int s = (n_flags + 15) >> 5; // arr size, max is 134_217_727
 	int* arr = (int*)malloc(sizeof(int) * s);
 	return arr;
 }
